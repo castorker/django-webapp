@@ -1,5 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def welcome(request):
-    return HttpResponse("Welcome to quibbles play with words!")
+    return render(request, 'quibbles/welcome.html')
